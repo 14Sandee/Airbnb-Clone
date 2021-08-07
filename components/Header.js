@@ -90,8 +90,8 @@ function Header({ placeholder }) {
                             className="w-12 pl-2 text-lg outline-none text-red-400" />
                     </div>
                     <div className="flex">
-                        <button onClick={resetInput} className="flex-grow text-gray-500">Cancel</button>
-                        <button onClick={search} className="flex-grow text-red-400">Search</button>
+                        <button onClick={resetInput} className="flex-grow py-2 rounded-lg border text-gray-500 shadow-lg hover:border-red-400 hover:text-red-400">Cancel</button>
+                        <button onClick={search} className="flex-grow text-red-400 rounded-lg shadow-lg hover:bg-red-400 hover:text-white">Search</button>
                     </div>
                 </div>
             )}
