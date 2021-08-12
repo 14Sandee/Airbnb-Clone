@@ -5,7 +5,7 @@ module.exports = {
             "a0.muscache.com",
         ],
         env: {
-            mapbox_key: "pk.eyJ1IjoiMTRzYW5kZWUiLCJhIjoiY2tzMWpxdzdtMGt2ZzJ2cGUwbHZ4MzVudCJ9.G9-X_8GsYP1HIwl1GwDCqQ"
+            mapbox_key: 'pk.eyJ1IjoiMTRzYW5kZWUiLCJhIjoiY2tzMWpxdzdtMGt2ZzJ2cGUwbHZ4MzVudCJ9.G9-X_8GsYP1HIwl1GwDCqQ'
         },
     },
 };

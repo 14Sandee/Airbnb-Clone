@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UsersIcon } from "@heroicons/react/solid";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
-import { useRouter } from "next/dist/client/router"
+import { useRouter } from "next/dist/client/router";
 
-function Header({ placeholder }) {
+function IndexHeader({ placeholder }) {
 
     const [searchInput, setSearchInput] = useState("");
     const [active, setActive] = useState(false);
@@ -43,8 +43,10 @@ function Header({ placeholder }) {
         setActive(false);
     };
 
+
     return (
-        <header className="sticky top-0 z-50 grid grid-cols-3 shadow-md p-5 md:px-10 bg-white">
+            <header className="fixed w-screen top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10 text-gray-500 ">
+            
             <div onClick={() => router.push("/")} className="relative flex items-center h-9 cursor-pointer my-auto">
                 <Image 
                     src="https://links.papareact.com/qd3"
@@ -65,7 +67,7 @@ function Header({ placeholder }) {
                 <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer hover:bg-red-500 md:mx-2" />
             </div>
             
-            <div className="flex space-x-4 justify-end items-center text-gray-500">
+            <div className="flex space-x-4 justify-end items-center">
                 <p className="hidden md:inline cursor-pointer hover:bg-gray-50 py-2 px-3 rounded-full font-semibold">Become a host</p>
                 <GlobeAltIcon className="h-6 cursor-pointer" />
                 <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
@@ -80,7 +82,6 @@ function Header({ placeholder }) {
                         ranges={[selectionRange]}
                         minDate={new Date()}
                         rangeColors={["#FD5B61"]}
-                        moveRangeOnFirstSelection={false}
                         onChange={handleSelect}
                     />
                     <div className="flex items-center border-b mb-4">
@@ -99,8 +100,8 @@ function Header({ placeholder }) {
                     </div>
                 </div>
             )}
-        </header>
+        </header>  
     )
 }
 
-export default Header
+export default IndexHeader
