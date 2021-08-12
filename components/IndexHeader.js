@@ -45,9 +45,9 @@ function IndexHeader({ placeholder }) {
 
 
     return (
-            <header className="fixed w-screen top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10 text-gray-500 ">
+            <header className="fixed w-screen top-0 z-50 grid grid-cols-3 bg-transparent shadow-md p-5 md:px-10 text-gray-500 ">
             
-            <div onClick={() => router.push("/")} className="relative flex items-center h-9 cursor-pointer my-auto">
+            <div onClick={() => router.push("/")} className="relative  flex items-center h-9 cursor-pointer my-auto">
                 <Image 
                     src="https://links.papareact.com/qd3"
                     layout="fill"  

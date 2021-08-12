@@ -11,7 +11,7 @@ function Banner() {
             />
             <div className="absolute top-1/2 w-full transform translate-y-[-40%]">
                 <div className="max-w-7xl 2xl:max-w-full 2xl:mx-20 mx-auto px-8 sm:px-16"> 
-                    <h1 className="text-2xl w-[150px] lg:text-5xl xl:text-6xl 2xl:text-7xl md:w-[500px] font-semibold text-white mb-5 tracking-tight" >Olympian & Paralympian Online Experiences</h1>
+                    <h1 className="text-3xl w-[170px] lg:text-5xl xl:text-6xl 2xl:text-7xl md:w-[500px] font-bold text-white mb-5 tracking-tight" >Olympian & Paralympian Online Experiences</h1>
                     <button className=" bg-white text-sm px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">Explore now</button>
                 </div>
                 
